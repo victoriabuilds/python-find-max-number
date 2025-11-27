@@ -1,0 +1,39 @@
+# Given list
+l = [13, 99, 6, 76, 11, 83, 27, 84, 28, 67, 66, 22, 96, 46, 63, 21, 65, 48, 8, 14 , 84, 22, 28, 11, 83, 87, 11, 76, 6, 83, 27]
+
+# Initialize _max with negative infinity to ensure any number in the list is larger
+_max = float("-inf")
+
+# Initialize the index variable
+i = 0
+
+# Loop through the list to find the maximum element ( 
+
+while i < len(l):
+    if l[i] > _max:
+        _max = l[i]
+    i += 1
+
+# Print the maximum value found
+print(_max)
+
+
+
+
+# What Happens:
+
+Start with _max = -infinity.
+
+Check the first number (13): It's bigger than _max, so now _max = 13.
+
+Check the next number (99): It's bigger than 13, so now _max = 99.
+
+Check each following number:
+
+Numbers like 6, 76, 11, etc., are all smaller than 99, so _max stays 99.
+
+Finally, we reach the end of the list.
+
+
+# Output:
+99
